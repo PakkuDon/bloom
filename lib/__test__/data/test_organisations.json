@@ -1,0 +1,36 @@
+[
+  {
+    "_id": 1,
+    "url": "http://initech.zendesk.com/api/v2/organizations/1.json",
+    "external_id": "0f249cb4-ec0d-4d53-b070-a5795102bd5e",
+    "name": "Something",
+    "domain_names": [
+      "something.com",
+      "example.com"
+    ],
+    "created_at": "2016-07-23T09:38:02 -10:00",
+    "details": "Non profit",
+    "shared_tickets": false,
+    "tags": [
+      "Conways",
+      "Law"
+    ]
+  },
+  {
+    "_id": 2,
+    "url": "http://initech.zendesk.com/api/v2/organizations/2.json",
+    "external_id": "12971510-245f-46b7-a9d9-b5388a9d471f",
+    "name": "Another corporation",
+    "domain_names": [
+      "another-corporation.com",
+      "corporation.com"
+    ],
+    "created_at": "2016-03-21T09:38:02 -10:00",
+    "details": "MegaCorp",
+    "shared_tickets": false,
+    "tags": [
+      "Washington",
+      "Wyoming"
+    ]
+  }
+]
