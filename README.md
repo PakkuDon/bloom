@@ -1,4 +1,4 @@
-# Support Ticket Search CLI
+# Bloom - Search CLI 🌸
 
 A CLI-based application to lookup details for users, organisations and tickets
 

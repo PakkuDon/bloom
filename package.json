@@ -1,5 +1,5 @@
 {
-  "name": "support-ticket-search-cli",
+  "name": "bloom-search-cli",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
