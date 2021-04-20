@@ -25,8 +25,8 @@ X) Exit
     case "3":
       console.log("Search tickets");
       break;
-    case "":
     case "x":
+      console.log("Exiting...");
       break;
     default:
       console.log(
