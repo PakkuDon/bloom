@@ -1,5 +1,6 @@
 const readlineSync = require("readline-sync");
 const Store = require("./lib/store");
+const normalizeInput = require("./lib/normalizeInput");
 
 const main = () => {
   const store = new Store();
@@ -47,7 +48,7 @@ X) Exit
 };
 
 const searchUsers = (store) => {
-  let query = readlineSync.question("Query: ").trim();
+  let query = normalizeInput(readlineSync.question("Query: "));
   const results = store.findUsers(query);
   results.forEach((user) => {
     printRecord({ record: user });
@@ -57,7 +58,7 @@ const searchUsers = (store) => {
 };
 
 const searchTickets = (store) => {
-  let query = readlineSync.question("Query: ").trim();
+  let query = normalizeInput(readlineSync.question("Query: "));
   const results = store.findTickets(query);
   results.forEach((ticket) => {
     printRecord({ record: ticket });
@@ -67,7 +68,7 @@ const searchTickets = (store) => {
 };
 
 const searchOrganisations = (store) => {
-  let query = readlineSync.question("Query: ").trim();
+  let query = normalizeInput(readlineSync.question("Query: "));
   const results = store.findOrganisations(query);
   results.forEach((organisation) => {
     printRecord({ record: organisation });
