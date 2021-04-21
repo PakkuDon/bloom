@@ -90,7 +90,7 @@ const printRecord = ({ record }) => {
           console.log(`${element}`);
         }
       });
-    } else if (typeof value === "object") {
+    } else if (typeof value === "object" && value !== null) {
       console.log(`${key}:`);
       printRecord({ record: value });
     } else {
